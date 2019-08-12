@@ -50,6 +50,11 @@ namespace Zrk.Consul.ServiceExtensions
                 addresses = features.Get<IServerAddressesFeature>().Addresses.Select(p => new Uri(p)).ToArray();
             }
 
+            if (serviceDiscoveryOption.HealthCheck == null)
+            {
+                serviceDiscoveryOption.HealthCheck = new HealthCheckOption();
+            }
+
             foreach (var address in addresses)
             {
                 var serviceId = $"{serviceDiscoveryOption.ServiceName}_{address.Host}:{address.Port}";

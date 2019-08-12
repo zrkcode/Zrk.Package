@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>通用帮助类、扩展等。</Description>
+    <Copyright>Zrk</Copyright>
+    <PackageProjectUrl>https://github.com/zrkcode/Zrk.Package</PackageProjectUrl>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/20158277</PackageIconUrl>
+  </PropertyGroup>
+
+</Project>
